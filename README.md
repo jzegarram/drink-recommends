@@ -40,20 +40,4 @@ Following [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/):
 
 - Format would be type-of-change(scope): [ticket-number] description'. Types would be feat, fix, build, ci, docs, style, refactor, test, etc.
 
-For example:
-feat (student-dashboard): [vq-147] initial setup of the dashboard component
- 
-### git main branch name update 
-
-Just in case you have main branch as default branch in your local env.
-
-Run:
-- git branch -m main master
-- git fetch origin
-- git branch -u origin/master master
-- git remote set-head origin -a
-
-### Happy coding!
-![image](https://img2.rtve.es/i/?w=1600&i=1614352808020.jpg)
-
 #### Made with <3 by UNMSM
