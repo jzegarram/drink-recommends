@@ -69,7 +69,7 @@ export const DrinkResutls = ({ data }: Props) => {
       }
 
   return (
-    <Grid container item xs={12}>
+    <Grid container item xs={12} mb={12}>
       {data && data.length > 0 && <List data={data} />}
     </Grid>
   );
