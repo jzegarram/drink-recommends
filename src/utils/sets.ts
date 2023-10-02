@@ -1,5 +1,5 @@
 type Drink = {
-    idDrink?: string;
+    idDrink: string;
     strDrink?: string;
     strDrinkThumb?: string;
 };
@@ -9,7 +9,7 @@ const createUnion = (...arrays: Drink[][]): Drink[] => {
 
     arrays.forEach(array => {
         array.forEach(item => {
-            if (item.idDrink !== undefined) {
+            if (item.idDrink) {
                 map.set(item.idDrink, item);
             }
         });
@@ -24,13 +24,16 @@ const createIntersection = (array1: Drink[], array2: Drink[]): Drink[] => {
 
     // Add all items from array1 to the map
     array1.forEach(item => {
-        if (item.idDrink !== undefined) map.set(item.idDrink, item);
+        if (item.idDrink) map.set(item.idDrink, item);
     });
 
     return array2.filter(item => map.has(item.idDrink));
 };
 
+
 export {
     createUnion,
     createIntersection
 }
+
+
