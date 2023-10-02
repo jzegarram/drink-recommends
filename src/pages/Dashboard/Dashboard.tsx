@@ -74,7 +74,7 @@ const Dashboard = () => {
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent"
-          }} align='center' fontFamily={'Sedgwick Ave Display'} fontSize={"5rem"} component="h1" fontWeight={"bold"} >
+          }} align='center' fontFamily={'Sedgwick Ave Display'} fontSize={{xs: "2.5rem", sm: "4rem", md: "5rem"}} component="h1" fontWeight={"bold"} >
             Alcoholic Genius
           </Typography>
         </Grid>
