@@ -66,13 +66,21 @@ const Dashboard = () => {
     >
       <Grid container minHeight={'100vh'}>
         <Grid item xs={12} my={3} >
-          <Typography color={"#d16fb7"} align='center' fontFamily={'Sedgwick Ave Display'} fontSize={"5rem"} component="h1" fontWeight={"bold"} >
+          <Typography 
+          sx= {{   
+              backgroundcolor: "primary",
+              backgroundImage: `linear-gradient(89.8deg, rgb(195, 67, 129) 11%, rgb(90, 43, 186) 83.4%)`,
+              backgroundRepeat: "repeat",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+          }} align='center' fontFamily={'Sedgwick Ave Display'} fontSize={"5rem"} component="h1" fontWeight={"bold"} >
             Alcoholic Genius
           </Typography>
         </Grid>
         <Grid item xs={12} mb={3}>
           <Typography align="center" variant="h4" component="h1" gutterBottom>
-            Elige tus categorias favoritas
+            Seleccione sus categorias favoritas
           </Typography>
         </Grid>
         <Grid item xs={12} mb={3}>
@@ -102,7 +110,7 @@ const Dashboard = () => {
         </Grid>
         <Grid item xs={12} mb={3}>
           <Typography align="center" variant="h4" component="h1" gutterBottom>
-            Elige tus ingredientes favoritos
+            Seleccione sus ingredientes favoritos
           </Typography>
         </Grid>
         <Grid item xs={12} mb={3}>
