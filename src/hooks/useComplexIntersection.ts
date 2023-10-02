@@ -43,7 +43,7 @@ export const useComplexIntersection = ({ query }: Props) => {
 
             if (unionBetweenCategories.length === 0 && unionBetweenIngredients.length === 0) { setIntersectionData([]); return; }
             if (unionBetweenCategories.length === 0 && unionBetweenIngredients.length > 0) { setIntersectionData(unionBetweenIngredients); return; }
-            if (unionBetweenCategories.length > 0 && unionBetweenIngredients.length > 0) { setIntersectionData(unionBetweenCategories); return; }
+            if (unionBetweenCategories.length > 0 && unionBetweenIngredients.length === 0) { setIntersectionData(unionBetweenCategories); return; }
 
             // console.log({ unionBetweenCategories, unionBetweenIngredients })
 
