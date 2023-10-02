@@ -1,5 +1,5 @@
 export interface Category {
-    strCategory?: string
-    id?: string;
-    selected?: boolean;
+  strCategory?: string;
+  id?: string;
+  selected?: boolean;
 }

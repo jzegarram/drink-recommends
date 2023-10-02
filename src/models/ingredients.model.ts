@@ -1,5 +1,5 @@
 export interface Ingredient {
-    strIngredient1?: string
-    id?: string;
-    selected?: boolean;
+  strIngredient1?: string;
+  id?: string;
+  selected?: boolean;
 }

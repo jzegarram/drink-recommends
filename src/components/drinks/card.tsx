@@ -10,31 +10,22 @@ interface Props {
   title?: string;
   desc?: string;
 }
-export default function ActionAreaCard({
-    imgUrl,
-    title,
-    desc
-}: Props) {
+export default function ActionAreaCard({ imgUrl, title, desc }: Props) {
   return (
     <Grid item>
-        <Card sx={{ width: 300 }}>
+      <Card sx={{ width: 300 }}>
         <CardActionArea>
-            <CardMedia
-            component="img"
-            height="200"
-            image={imgUrl}
-            alt=""
-            />
-            <CardContent>
+          <CardMedia component="img" height="200" image={imgUrl} alt="" />
+          <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-                {title}
+              {title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-                {desc}
+              {desc}
             </Typography>
-            </CardContent>
+          </CardContent>
         </CardActionArea>
-        </Card>
+      </Card>
     </Grid>
   );
 }
