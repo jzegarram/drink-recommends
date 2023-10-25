@@ -3,7 +3,7 @@ import { List } from './list';
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import SearchOffIcon from '@mui/icons-material/SearchOff';
 import DrinkService from '@/web/services/drinks.service';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ActionAreaCard from './card';
 
 interface Props {
@@ -16,11 +16,8 @@ export const DrinkResutls = ({ data }: Props) => {
 
     const getRandomDrink = async () => {
        const ramdomDrink = await DrinkService.getRandom();
-       console.log(ramdomDrink)
        setRandomDrink(ramdomDrink);
     }
-
-    useEffect(() => {console.log(randomDrink)}, [randomDrink])
   
     if (!data || data.length === 0) {
       

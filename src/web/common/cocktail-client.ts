@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// console.log(import.meta.env.VITE_COCKTAIL_API_URL)
 const baseURL = import.meta.env.VITE_COCKTAIL_API_URL;
 
 export const CocktailClient = axios.create({

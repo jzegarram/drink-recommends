@@ -39,7 +39,6 @@ const Dashboard = () => {
   const isShowMore = limitIngredients >= ingredients.length;
 
   const goToFilterPage = (query: SearchQuery) => {
-    // console.log("goto /results with query", query)
     navigate('/results', { state: { query } });
   };
 
